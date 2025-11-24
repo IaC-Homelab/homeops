@@ -5,7 +5,7 @@ Goal: push-button infra, best practices, and as cloud-agnostic as possible. ✨
 
 <br>
 
-*update: New Task board: [GitHub Project 📋](https://github.com/users/pukar10/projects/1)*
+*Update: New Task board: [GitHub Project 📋](https://github.com/users/pukar10/projects/1)*
 <br><br>
 
 ## Project Index 🚀
