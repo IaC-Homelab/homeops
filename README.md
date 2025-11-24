@@ -1,72 +1,65 @@
-# homelab-master
-Master repo for building, configuring and deploying the infrastructure to the Homelab! The goal will be to automate the entire process while also trying to implement best practices and be cloud agnostic.
+# homelab-master 🏡☁️
+Central repo for building, configuring, and deploying the entire homelab stack.  
+Goal: push-button infra, best practices, and as cloud-agnostic as possible. ✨
 
-`*-forge` - Terraform repos
+**UPDATE:** New Task board: [GitHub Project 📋](https://github.com/users/pukar10/projects/1)
+<br><br>
 
-`*-ignite` - Ansible repos
+## Project Index 🚀
 
-`*-launch` - Helm wrapper repos
+### 🖥️ Proxmox & VMs
+- [`proxmox-deploy`](https://github.com/pukar10/proxmox-deploy)  
+  Provision and configure VMs on Proxmox with Terraform + Cloud-Init.
 
-## To do
-- [x] Create a list of desired Homelab services and their purpose
+### ☸️ Kubernetes
+- [`k3-automation`](https://github.com/pukar10/k3-automation)  
+  Deploy a lean Kubernetes cluster
+
+### 🔐 Certificates & Secrets
+- [`cert-manager-launch`](https://github.com/pukar10/cert-manager-launch)  
+  Internal TLS via cert-manager
+
+- `external-secrets-launch` (TBA)  
+  Sync secrets between external secret stores and Kubernetes secrets, or generate your own
+
+### 🗄️ Data & Auth
+- [`cloudnativepg-launch`](https://github.com/pukar10/cloudnativepg-launch)  
+  Manage Postgres clusters using CloudNativePG
+
+- [`keycloak-launch`](https://github.com/pukar10/keycloak-launch)  
+  Central SSO and identity management
+<br><br>
+
+
+## Roadmap ✅➡️🚧
+
+### Done ✅
+- [x] List desired homelab services and their purpose
 - [x] Terraform to deploy VMs
 - [x] Ansible to configure and install K3s
-- [x] Ansible to configure and install rook-ceph
+- [x] Ansible to configure and install Rook-Ceph
 - [x] Upgrade to Proxmox 9
-- [x] Determine how to handle secrets (storing, push) and passwords
-- [x] Determine Deployment strategy (Bootstrap vs ArgoCD): ArgoCD
-- [ ] Refactor the cp-deply project to use ArgoCD app of apps to bootstrap the following services:
-  - [ ] MetalLB
-  - [ ] Ingress-nginx
-  - [ ] Cert-manager
-  - [ ] External-secrets
-  - [ ] Infisical
-  - [ ] Bitwarden
-  - [ ] Rook-Ceph
-  - [ ] CNPG
-  - [ ] Keycloak
-  - [ ] Gitea
-  - [ ] Nexus
-  - [ ] Argocd
-  - [ ] K8s dashboard
-  - [ ] Paperless
-  - [ ] Plex
+- [x] Decide secrets strategy (storage, push, usage)
+- [x] Choose deployment strategy (Bootstrap vs ArgoCD) → **ArgoCD** 🎯
 
-**UPDATE:** We got a task Board! [HERE!](https://github.com/users/pukar10/projects/1)
+### Next Up 🚧
+Refactor the **cp-deploy** project to use an ArgoCD *App of Apps* pattern to bootstrap:
 
-## Index
+- [ ] MetalLB
+- [ ] ingress-nginx
+- [ ] cert-manager
+- [ ] external-secrets
+- [ ] Infisical
+- [ ] Bitwarden
+- [ ] Rook-Ceph
+- [ ] CloudNativePG (CNPG)
+- [ ] Keycloak
+- [ ] Gitea
+- [ ] Nexus
+- [ ] ArgoCD
+- [ ] Kubernetes Dashboard
+- [ ] Paperless
+- [ ] Plex
 
-[Proxmox-forge](https://github.com/pukar10/proxmox-deploy)
-* Declarative Terraform repo to deploy n VMs onto n hosts with differing configurations.
-
-[k3-ignite](https://github.com/pukar10/k3-automation)
-* Declarative ansible repo to configure VMs installing the following
-  *  Minimal k3s
-  *  Containerd as CRI
-  *  Flannel as CNI
-*  Optional playbooks to install
-  *  MetalLB to replace serviceLB
-  *  Ingress-nginx to replace traefik
-  *  Rook-ceph as a storage solution
-
-[cert-manager-launch](https://github.com/pukar10/cert-manager-launch)
-* Automates getting/renewing certs
-
-external-secrets-launch (tba)
-* Able to generates secret and push to secret-store or pull secrets from secret-store and save as a secret for apps to consume.
-
-infisical-launch (tba)
-* Secret store
-
-bitwarden-launch (tba)
-* Password manager
-
-[cloudnativepg-launch](https://github.com/pukar10/cloudnativepg-launch)
-* Operator to manage one or more Postgres clusters
-
-[keycloak-launch](https://github.com/pukar10/keycloak-launch)
-* SSO
-
-gitea-launch (tba)
-* Code repository
-
+<br>
+🧑🏼‍🏭
