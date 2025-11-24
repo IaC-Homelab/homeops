@@ -14,9 +14,13 @@ Goal: push-button infra, best practices, and as cloud-agnostic as possible. ✨
 - [`proxmox-deploy`](https://github.com/pukar10/proxmox-deploy)  
   Provision and configure VMs on Proxmox with Terraform + Cloud-Init.
 
+<br>
+
 ### ☸️ Kubernetes
 - [`k3-automation`](https://github.com/pukar10/k3-automation)  
   Deploy a lean Kubernetes cluster
+
+<br>
 
 ### 🔐 Certificates & Secrets
 - [`cert-manager-launch`](https://github.com/pukar10/cert-manager-launch)  
@@ -24,6 +28,8 @@ Goal: push-button infra, best practices, and as cloud-agnostic as possible. ✨
 
 - `external-secrets-launch` (TBA)  
   Sync secrets between external secret stores and Kubernetes secrets, or generate your own
+
+<br>
 
 ### 🗄️ Data & Auth
 - [`cloudnativepg-launch`](https://github.com/pukar10/cloudnativepg-launch)  
