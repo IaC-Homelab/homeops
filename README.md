@@ -2,7 +2,7 @@
 Central repo for building, configuring, and deploying the entire homelab stack.  
 Goal: push-button infra, best practices, and as cloud-agnostic as possible. ✨
 
-**UPDATE:** New Task board: [GitHub Project 📋](https://github.com/users/pukar10/projects/1)
+*update: New Task board: [GitHub Project 📋](https://github.com/users/pukar10/projects/1)*
 <br><br>
 
 ## Project Index 🚀
