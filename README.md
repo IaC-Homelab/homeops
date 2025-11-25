@@ -69,5 +69,39 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 ## 📚 Docs, Notes & How-Tos
 
 This repo will also hold markdown notes under something like `docs/` or `notes/`.
+<br><br>
 
+## Roadmap ✅➡️🚧
+
+### Done ✅
+- [x] List desired homelab services and their purpose
+- [x] Terraform to deploy VMs
+- [x] Ansible to configure and install K3s
+- [x] Ansible to configure and install Rook-Ceph
+- [x] Upgrade to Proxmox 9
+- [x] Decide secrets strategy (storage, push, usage)
+- [x] Choose deployment strategy (Bootstrap vs ArgoCD) → **ArgoCD** 🎯
+
+<br>
+
+### Next Up 🚧
+Refactor the **cp-deploy** project to use an ArgoCD *App of Apps* pattern to bootstrap:
+
+- [ ] MetalLB
+- [ ] ingress-nginx
+- [ ] cert-manager
+- [ ] external-secrets
+- [ ] Infisical
+- [ ] Bitwarden
+- [ ] Rook-Ceph
+- [ ] CloudNativePG (CNPG)
+- [ ] Keycloak
+- [ ] Gitea
+- [ ] Nexus
+- [ ] ArgoCD
+- [ ] Kubernetes Dashboard
+- [ ] Paperless
+- [ ] Plex
+
+<br>
 🧑🏼‍🏭
