@@ -82,4 +82,4 @@ Refactor the **`cp-deploy`** project to use an ArgoCD **App of Apps** pattern to
 - [ ] Plex
 <br>
 
-🧑🏼‍🏭 Happy Homelabing!
+Happy Homelabbing 🧑🏼‍🏭
