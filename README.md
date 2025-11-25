@@ -8,6 +8,8 @@ This repo is the **control center** for my homelab:
 - Troubleshooting logs so Future Me doesn’t suffer (as much)
 
 Goal: **documented, repeatable home infra** that feels more like a tiny cloud and less like a pile of sticky notes.
+
+*Update: New Task board: GitHub Project 📋*
 <br><br>
 
 ## 🧭 Contents
@@ -20,6 +22,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 <br><br>
 
 ## 🚀 Project Index (Other Repos)
+<br>
 
 ### 🖥️ Proxmox & VMs
 
