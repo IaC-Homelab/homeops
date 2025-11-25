@@ -33,6 +33,9 @@ This repo will also hold markdown notes under something like `docs/` or `notes/`
 
 ### ☸️ Kubernetes
 
+- [`k3-automation`](https://github.com/pukar10/k3-automation) 
+  Deploy a lean Kubernetes cluster.
+
 #### 🔐 Certificates & Secrets
 
 - [`cert-manager-launch`](https://github.com/pukar10/cert-manager-launch)  
