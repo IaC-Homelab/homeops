@@ -33,7 +33,7 @@ This repo will also hold notes under something like `docs/` or `notes/`, includi
 
 ## 📂 Project Index
 
-### 🖥️ Proxmox / VMs
+### 🧱 Terraform
 
 - [`proxmox-deploy`](https://github.com/pukar10/proxmox-deploy)  
   Provision and configure VMs on Proxmox using **Terraform + Cloud-Init**.
@@ -58,6 +58,11 @@ This repo will also hold notes under something like `docs/` or `notes/`, includi
   
   - [`keycloak-launch`](https://github.com/pukar10/keycloak-launch)  
     Central **SSO and identity provider** for apps and services.
+
+🌐 Web Apps
+  - [`pukarsubedi.com`](https://github.com/pukar10/pukar10.github.io)
+    * `pukarsubedi.com` hosted on github created with Jekyll
+    * `app.pukarsubedi.com` → 🔒 tunnel → 🪟 Caddy reverse proxy → 🖥️ homelab servers hosting apps!
   <br>
 
 ## 🧭 Roadmap
