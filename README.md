@@ -1,9 +1,16 @@
+<div align="center">
+  
 # Homeops 🏡⚙️  
-_The ops brain for homelabs._
+[![Proxmox Version](https://img.shields.io/badge/Proxmox-9.1.1-blue?logo=proxmox)](https://www.proxmox.com/en/proxmox-virtual-environment/overview)
+[![K3s Version](https://img.shields.io/badge/K3s-v1.34.1-brightgreen?logo=kubernetes)](https://k3s.io/)
+[![MetalLB Version](https://img.shields.io/badge/MetalLB-v0.15.2-9cf)](https://metallb.github.io/metallb)
+[![Ingress NGINX Version](https://img.shields.io/badge/ingress--nginx-5.2.1-orange?logo=nginx)](https://kubernetes.github.io/ingress-nginx)
 
-This repo is the **control center** for my homelab:
+This repo is the **control center** for my homelab.    
 
-- Index of all my homelab repos
+</div>
+
+Index of various homelab repos
 - Notes, guides, and “what did Past Me do to make this work?”
 - Troubleshooting logs so Future Me doesn’t suffer (as much)
 
