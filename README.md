@@ -61,8 +61,8 @@ This repo will also hold notes under something like `docs/` or `notes/`, includi
 
 🌐 Web Apps
   - [`pukarsubedi.com`](https://github.com/pukar10/pukar10.github.io)
-    * `pukarsubedi.com` hosted on github created with Jekyll
-    * `app.pukarsubedi.com` → 🔒 tunnel → 🪟 Caddy reverse proxy → 🖥️ homelab servers hosting apps!
+    * [`pukarsubedi.com`](https://pukarsubedi.com/) hosted on github created with Jekyll
+    * [`app.pukarsubedi.com`](https://app.pukarsubedi.com/) → 🔒 tunnel → 🪟 Caddy reverse proxy → 🖥️ homelab servers hosting apps!
   <br>
 
 ## 🧭 Roadmap
