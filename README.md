@@ -14,19 +14,19 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 
 ## 🚀 Project Index (Other Repos)
 
-### 🖥️ VMs (Proxmox)
+#### 🖥️ VMs (Proxmox)
 
 - [`proxmox-deploy`](https://github.com/pukar10/proxmox-deploy)  
   Provision and configure VMs on Proxmox with Terraform + Cloud-Init.
 
 
-### ☸️ Kubernetes
+#### ☸️ Kubernetes
 
 - [`k3-automation`](https://github.com/pukar10/k3-automation)  
   Deploy a lean Kubernetes cluster.
 
 
-### 🔐 Certificates & Secrets
+#### 🔐 Certificates & Secrets
 
 - [`cert-manager-launch`](https://github.com/pukar10/cert-manager-launch)  
   Internal TLS via cert-manager.
@@ -35,7 +35,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
   Sync secrets between external secret stores and Kubernetes secrets, or generate your own.
 
 
-### 🗄️ Data & Auth
+#### 🗄️ Data & Auth
 
 - [`cloudnativepg-launch`](https://github.com/pukar10/cloudnativepg-launch)  
   Manage Postgres clusters using CloudNativePG.
@@ -50,7 +50,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 
 ## Roadmap ✅➡️🚧
 
-### Done ✅
+#### Done ✅
 - [x] List desired homelab services and their purpose
 - [x] Terraform to deploy VMs
 - [x] Ansible to configure and install K3s
@@ -59,7 +59,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 - [x] Decide secrets strategy (storage, push, usage)
 - [x] Choose deployment strategy (Bootstrap vs ArgoCD) → **ArgoCD** 🎯
 
-### Next Up 🚧
+#### Next Up 🚧
 Refactor the **cp-deploy** project to use an ArgoCD *App of Apps* pattern to bootstrap:
 
 - [ ] MetalLB
