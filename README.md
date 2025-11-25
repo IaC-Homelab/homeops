@@ -1,4 +1,4 @@
-# homeops 🏡⚙️  
+# Homeops 🏡⚙️  
 _The ops brain for homelabs._
 
 This repo is the **control center** for my homelab:
@@ -8,7 +8,7 @@ This repo is the **control center** for my homelab:
 - Troubleshooting logs so Future Me doesn’t suffer (as much)
 
 Goal: **documented, repeatable home infra** that feels more like a tiny cloud and less like a pile of sticky notes.
-
+<br><br>
 
 ## 🧭 Contents
 
@@ -17,7 +17,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 - [Troubleshooting Notes](#-troubleshooting-notes)
 - [Roadmap](#-roadmap)
 - [Meta / Task Board](#-meta--task-board)
-
+<br><br>
 
 ## 🚀 Project Index (Other Repos)
 
@@ -27,6 +27,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
   Provision and configure VMs on Proxmox with Terraform + Cloud-Init.
 
 ---
+<br>
 
 ### ☸️ Kubernetes
 
@@ -34,6 +35,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
   Deploy a lean Kubernetes cluster.
 
 ---
+<br>
 
 ### 🔐 Certificates & Secrets
 
@@ -44,6 +46,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
   Sync secrets between external secret stores and Kubernetes secrets, or generate your own.
 
 ---
+<br>
 
 ### 🗄️ Data & Auth
 
@@ -58,6 +61,7 @@ Goal: **documented, repeatable home infra** that feels more like a tiny cloud an
 *(Add more as the homelab expands: media, monitoring, CI, etc.)*
 
 ---
+<br>
 
 ## 📚 Docs, Notes & How-Tos
 
