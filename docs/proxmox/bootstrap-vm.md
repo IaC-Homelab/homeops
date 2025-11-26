@@ -2,7 +2,7 @@
 
 1. Create admin user
 ```bash
-sudo add user admin
+sudo adduser admin
 sudo usermod -aG sudo admin
 ```
 
