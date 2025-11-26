@@ -6,32 +6,34 @@ sudo adduser admin
 sudo usermod -aG sudo admin
 ```
 
-2. Generate ssh key
-```bash
-ssh-keygen -t ed25519 -C "subedipukar@gmail.com"
-```
 
-
-3. Updates & basic packages
+2. Updates & basic setup
 ```bash
 sudo apt update && sudo apt upgrade -y
 sudo apt install -y ca-certificates git curl vim
+
+# Generate ssh-key
+ssh-keygen -t ed25519 -C "subedipukar@gmail.com"
+
+# Configure git user and email
+git config --global user.name "Pukar Subedi"
+git config --global user.email "subedipukar@gmail.com"
 ```
 
 
 
-4. Install Docker
+3. Install Docker
 ```bash
-# 4.1 Remove any conflicting packages
+# 3.1 Remove any conflicting packages
 sudo apt remove $(dpkg --get-selections docker.io docker-compose docker-compose-v2 docker-doc podman-docker containerd runc | cut -f1)
 
-# 4.2 Add Docker offical GPG key
+# 3.2 Add Docker offical GPG key
 sudo apt install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-# 4.3 Add Docker repo to apt sources
+# 3.3 Add Docker repo to apt sources
 sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
 Types: deb
 URIs: https://download.docker.com/linux/ubuntu
@@ -40,16 +42,16 @@ Components: stable
 Signed-By: /etc/apt/keyrings/docker.asc
 EOF
 
-# 4.4 Install 
+# 3.4 Install 
 sudo apt update
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-# 4.5 Add user to docker group
+# 3.5 Add user to docker group
 sudo usermod -aG docker "$USER"
 
-# 4.6 logout and login
+# 3.6 logout and login
 
-# 4.7 Verify
+# 3.7 Verify
 sudo systemctl status docker
 docker run --rm hello-world
 ```
