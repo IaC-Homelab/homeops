@@ -35,7 +35,9 @@ sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin d
 # 2.3 Add user to docker group
 sudo usermod -aG docker "$USER"
 
-# 2.5 Verify (might have to relogin)
+# 2.4 logout and login
+
+# 2.5 Verify
 sudo systemctl status docker
 docker run --rm hello-world
 ```
