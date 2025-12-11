@@ -65,33 +65,23 @@ This repo will also hold notes under something like `docs/` or `notes/`, includi
     * [`app.pukarsubedi.com`](https://app.pukarsubedi.com/) → 🔒 tunnel → 🪟 Caddy reverse proxy → 🖥️ homelab servers hosting apps!
   <br>
 
-## 🧭 Roadmap
-
-- [x] List desired homelab services and their purpose
-- [x] Terraform to deploy VMs
-- [x] Ansible to configure and install K3s
-- [x] Ansible to configure and install Rook-Ceph
-- [x] Upgrade to Proxmox 9
-- [x] Decide secrets strategy (storage, push, usage)
-- [x] Choose deployment strategy (Bootstrap vs ArgoCD) → **ArgoCD** 🎯
-
-Refactor the **`cp-deploy`** project to use an ArgoCD **App of Apps** pattern to bootstrap:
-
-- [x] MetalLB
-- [x] ingress-nginx
-- [ ] cert-manager
-- [ ] external-secrets
-- [ ] Infisical
-- [ ] Bitwarden
-- [ ] Rook-Ceph
-- [x] CloudNativePG (CNPG)
-- [x] Keycloak
-- [ ] Gitea
-- [ ] Nexus
-- [ ] ArgoCD
-- [ ] Kubernetes Dashboard
-- [ ] Paperless
-- [ ] Plex
-<br>
 
 Happy Homelabbing 🧑🏼‍🏭
+
+
+# Troubleshooting
+
+
+##### No more space on disk
+```bash
+# Check disk space
+df -h
+
+# In this directory Display disk usage of every file + folder
+du -sh * .[!.]* 2>/dev/null | sort -h
+
+# Usual suspects
+rm -rf ~/.vscode-server
+rm -rf ~/.cache/*
+rm -rf node_modules # run from inside projects
+```
