@@ -1,5 +1,10 @@
 # Overview
 
+## Possible upgrades
+
+- [ ] Returning full histroy gets expensive- return only `reply` + `thread_id`.
+- [ ] Add `GET /sessions/{thread_id} for history
+
 ## Agents
 
 ### Static models
@@ -25,7 +30,22 @@ Reason: what tool to use → Act: call tool → Reason: next tool to use → Act
 ### System prompt
 Should be in type `SystemMessage`
 
-#### [Dynamic system prompt](https://docs.langchain.com/oss/python/langchain/agents#dynamic-system-prompt)
+#### Dynamic system prompt
 * Use `middleware` decorater `@dynamic_prompt` to generate dynamic prompts based on model requests
 
+### Structured output
+`ToolStrategy` or `ProviderStrategy` 
+
+### Memory
+
+* "Short-term memory" Information stored in the state
+* "Long-term memory" 
+
+### Middleware
+Customizing agent behavior at differen stages, can be used to:
+* Process state before model is called (ex: trimming, context injection)
+* Modify/validate model's response (ex: guardrails, filtering)
+* Handle tool errors with custom logic
+* Implement dynamic model selection based on state or context
+* Add custom logging, monitoring or analytics
 
